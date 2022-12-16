@@ -1,5 +1,5 @@
 export function changeValue(e) {
-I    return{
+    return {
         type: 'VALUE_CHANGED',
         payload: e.target.value
     }
