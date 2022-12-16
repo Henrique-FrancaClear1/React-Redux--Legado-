@@ -4,8 +4,6 @@ import { bindActionCreators } from 'redux'
 import { changeValue } from './fieldActions'
 
 class Field extends Component {
-
-
     render() {
         return (
             <div>
@@ -19,12 +17,12 @@ class Field extends Component {
 
 function mapStateToProps(state) {
     return {
-        value: state.field.value 
+        value: state.field.value
     }
 }
 
-function mapDispathToProps(dispatch){
-    return bindActionCreators({ changeValue}, dispatch)
+function mapDispathToProps(dispatch) {
+    return bindActionCreators({ changeValue }, dispatch)
 }
 
 
